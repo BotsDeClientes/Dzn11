@@ -13,9 +13,9 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧
-["56949598720", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', true],
-["573112811966", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', true]]
+["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸
+["5491150076887", '𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸', true],
+["5491155974859", '𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸', true]]
 
 global.mods = []
 global.prems = []
@@ -112,7 +112,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1], 
+["5491150076887", '𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸', 1], 
 ["51978420752", '𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1]]
 
 global.mail = '' // Add email
@@ -121,7 +121,7 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
+global.packname = "𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸"
 global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -130,35 +130,35 @@ global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
 // [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1"
 global.vsJB = "1"
-global.gt = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
+global.gt = "𝗕𝗼𝘁 𝗗𝗲 𝗕𝗲𝗿𝗲 🧸"
 
-global.yt = "https://www.instagram.com/cristoferrojasph"
-global.yt2 = "https://www.instagram.com/cristoferrojasph"
-global.ig = "https://www.instagram.com/cristoferrojasph"
-global.md = "https://www.instagram.com/cristoferrojasph"
-global.fb = "https://www.instagram.com/cristoferrojasph"
-global.tk = "https://www.instagram.com/cristoferrojasph"
-global.ths = "https://www.instagram.com/cristoferrojasph"
-global.paypal = 'https://www.paypal.com/cristhoferrojas'
+global.yt = "https://www.instagram.com/bere_cuenca"
+global.yt2 = "https://www.instagram.com/bere_cuenca"
+global.ig = "https://www.instagram.com/bere_cuenca"
+global.md = "https://www.instagram.com/bere_cuenca"
+global.fb = "https://www.instagram.com/bere_cuenca"
+global.tk = "https://www.instagram.com/bere_cuenca"
+global.ths = "https://www.instagram.com/bere_cuenca"
+global.paypal = 'https://www.paypal.com/bere_cuenca'
 global.asistencia = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //Contacto
 global.bot = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧 𝙊𝙛𝙞𝙘𝙞𝙖𝙡 
 
-global.nna = 'https://www.instagram.com/cristoferrojasph' // Cuentas
-global.nn2 = 'https://www.instagram.com/cristoferrojasph' // Grupo tg GataBot
-global.nna2 = 'https://www.instagram.com/cristoferrojasph' // Help
-global.nn = 'https://www.instagram.com/cristoferrojasph' // Grupo 1
-global.nnn = 'https://www.instagram.com/cristoferrojasph' // Grupo 2
-global.nnnt = 'https://www.instagram.com/cristoferrojasph' // Grupo 3
-global.nnntt = 'https://www.instagram.com/cristoferrojasph' // Grupo 4
-global.nnnttt = 'https://www.instagram.com/cristoferrojasph' // Grupo 5
-global.nnnttt1 = 'https://www.instagram.com/cristoferrojasph' // Grupo 6 COL
-global.nnnttt2 = 'https://www.instagram.com/cristoferrojasph' // Grupo 7 COL
-global.nnnttt3 = 'https://www.instagram.com/cristoferrojasph' // Grupo 8 COL
-global.nnnttt4 = 'https://www.instagram.com/cristoferrojasph' // Grupo 9 COL
-global.nnnttt5 = 'https://www.instagram.com/cristoferrojasph' // MULTI - BOTS
-global.nnnttt6 = 'https://www.instagram.com/cristoferrojasph' // A.T.M.M
-global.channel1 = 'https://www.instagram.com/cristoferrojasph'
-global.channel2 = 'https://www.instagram.com/cristoferrojasph'
+global.nna = 'https://www.instagram.com/bere_cuenca' // Cuentas
+global.nn2 = 'https://www.instagram.com/bere_cuenca' // Grupo tg GataBot
+global.nna2 = 'https://www.instagram.com/bere_cuenca' // Help
+global.nn = 'https://www.instagram.com/bere_cuenca' // Grupo 1
+global.nnn = 'https://www.instagram.com/bere_cuenca' // Grupo 2
+global.nnnt = 'https://www.instagram.com/bere_cuenca' // Grupo 3
+global.nnntt = 'https://www.instagram.com/bere_cuenca' // Grupo 4
+global.nnnttt = 'https://www.instagram.com/bere_cuenca' // Grupo 5
+global.nnnttt1 = 'https://www.instagram.com/bere_cuenca' // Grupo 6 COL
+global.nnnttt2 = 'https://www.instagram.com/bere_cuenca' // Grupo 7 COL
+global.nnnttt3 = 'https://www.instagram.com/bere_cuenca' // Grupo 8 COL
+global.nnnttt4 = 'https://www.instagram.com/bere_cuenca' // Grupo 9 COL
+global.nnnttt5 = 'https://www.instagram.com/bere_cuenca' // MULTI - BOTS
+global.nnnttt6 = 'https://www.instagram.com/bere_cuenca' // A.T.M.M
+global.channel1 = 'https://www.instagram.com/bere_cuenca'
+global.channel2 = 'https://www.instagram.com/bere_cuenca'
 global.channel3 = 'https://chat.whatsapp.com/Ghf2fHMzBLA1iuYAXstOb4'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
