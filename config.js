@@ -14,8 +14,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
 ["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬
-["5491159634868", '𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬', true],
-["5491159634868", '𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬', true]]
+["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true],
+["543815501815", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true]]
 
 global.mods = []
 global.prems = []
@@ -112,7 +112,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["5491159634868", '𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬', 1], 
+["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', 1], 
 ["51978420752", '𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1]]
 
 global.mail = '' // Add email
@@ -121,7 +121,7 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬"
+global.packname = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
 global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -130,35 +130,34 @@ global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
 // [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1"
 global.vsJB = "1"
-global.gt = "𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬"
+global.gt = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
 
-global.yt = "https://www.instagram.com/x69_blodie_27"
-global.yt2 = "https://www.instagram.com/x69_blodie_27"
-global.ig = "https://www.instagram.com/x69_blodie_27"
-global.md = "https://www.instagram.com/x69_blodie_27"
-global.fb = "https://www.instagram.com/x69_blodie_27"
-global.tk = "https://www.instagram.com/x69_blodie_27"
-global.ths = "https://www.instagram.com/x69_blodie_27"
-global.paypal = 'https://www.paypal.com/x69_blodie_27'
+global.yt = "https://www.instagram.com/comu.blessed"
+global.yt2 = "https://www.instagram.com/comu.blessed"
+global.md = "https://www.instagram.com/comu.blessed"
+global.fb = "https://www.instagram.com/comu.blessed"
+global.tk = "https://www.instagram.com/comu.blessed"
+global.ths = "https://www.instagram.com/comu.blessed"
+global.paypal = 'https://www.paypal.com/comu.blessed'
 global.asistencia = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //Contacto
 global.bot = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧 𝙊𝙛𝙞𝙘𝙞𝙖𝙡 
 
-global.nna = 'https://www.instagram.com/x69_blodie_27' // Cuentas
-global.nn2 = 'https://www.instagram.com/x69_blodie_27' // Grupo tg GataBot
-global.nna2 = 'https://www.instagram.com/x69_blodie_27' // Help
-global.nn = 'https://www.instagram.com/x69_blodie_27' // Grupo 1
-global.nnn = 'https://www.instagram.com/x69_blodie_27' // Grupo 2
-global.nnnt = 'https://www.instagram.com/x69_blodie_27' // Grupo 3
-global.nnntt = 'https://www.instagram.com/x69_blodie_27' // Grupo 4
-global.nnnttt = 'https://www.instagram.com/x69_blodie_27' // Grupo 5
-global.nnnttt1 = 'https://www.instagram.com/x69_blodie_27' // Grupo 6 COL
-global.nnnttt2 = 'https://www.instagram.com/x69_blodie_27' // Grupo 7 COL
-global.nnnttt3 = 'https://www.instagram.com/x69_blodie_27' // Grupo 8 COL
-global.nnnttt4 = 'https://www.instagram.com/x69_blodie_27' // Grupo 9 COL
-global.nnnttt5 = 'https://www.instagram.com/x69_blodie_27' // MULTI - BOTS
-global.nnnttt6 = 'https://www.instagram.com/x69_blodie_27' // A.T.M.M
-global.channel1 = 'https://www.instagram.com/x69_blodie_27'
-global.channel2 = 'https://www.instagram.com/x69_blodie_27'
+global.nna = 'https://www.instagram.com/comu.blessed' // Cuentas
+global.nn2 = 'https://www.instagram.com/comu.blessed' // Grupo tg GataBot
+global.nna2 = 'https://www.instagram.com/comu.blessed' // Help
+global.nn = 'https://www.instagram.com/comu.blessed' // Grupo 1
+global.nnn = 'https://www.instagram.com/comu.blessed' // Grupo 2
+global.nnnt = 'https://www.instagram.com/comu.blessed' // Grupo 3
+global.nnntt = 'https://www.instagram.com/comu.blessed' // Grupo 4
+global.nnnttt = 'https://www.instagram.com/comu.blessed' // Grupo 5
+global.nnnttt1 = 'https://www.instagram.com/comu.blessed' // Grupo 6 COL
+global.nnnttt2 = 'https://www.instagram.com/comu.blessed' // Grupo 7 COL
+global.nnnttt3 = 'https://www.instagram.com/comu.blessed' // Grupo 8 COL
+global.nnnttt4 = 'https://www.instagram.com/comu.blessed' // Grupo 9 COL
+global.nnnttt5 = 'https://www.instagram.com/comu.blessed' // MULTI - BOTS
+global.nnnttt6 = 'https://www.instagram.com/comu.blessed' // A.T.M.M
+global.channel1 = 'https://www.instagram.com/comu.blessed'
+global.channel2 = 'https://www.instagram.com/comu.blessed'
 global.channel3 = 'https://chat.whatsapp.com/Ghf2fHMzBLA1iuYAXstOb4'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -184,8 +183,8 @@ global.eg = ''
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬"
-global.igfg = "𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬"
+global.wm = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
+global.igfg = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
 global.wait = "*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*"
 global.waitt = "*⌛ _Cargando | Charging..._ ▬▬▭▭▭*"
 global.waittt = "*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*"
