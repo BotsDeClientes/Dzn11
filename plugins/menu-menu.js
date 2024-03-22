@@ -84,35 +84,35 @@ lugarFecha.locale('es', formatoFecha)
 const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
 
 let menu =`
- ╭━〔 * 🇪🇬 Blodie Creador  🇪🇬* 〕
-*┃➤ Creador : Blodie  🇪🇬*
+ ╭━〔 *💛 Magy Creador 💛* 〕
+*┃➤ Creador : Magy 💛*
 *┃➤ Instagram : ${md} 😻*
 *┃➤ Activo : ${uptime} 😹*
 *┃➤ Usuarios :  ${rtotalreg}/${totalreg} 🌹*
 *┃➤ Yape : +51 936 994 155 💸*
  ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Adquirir  🇪🇬* 〕
+  ╭━〔 *💛 Magy Adquirir 💛* 〕
  *┃➤* _${usedPrefix}Vendedores / Vendedores ofc_
  *┃➤* _${usedPrefix}Preciobot / Comprar El Bot_
- *┃➤* _${usedPrefix}Proveedor / Deseas Vender Blodie ?_
- *┃➤* _${usedPrefix}BlodieComu / Publicidad De La Comunidad Blodie_
+ *┃➤* _${usedPrefix}Proveedor / Deseas Vender Magy ?_
+ *┃➤* _${usedPrefix}MagyComu / Publicidad De La Comunidad Magy_
  *┃➤* _${usedPrefix}Publicidadbot / Publicidad Del Bot_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Info  🇪🇬* 〕
+  ╭━〔 *💛 Magy Info 💛* 〕
  *┃➤* _${usedPrefix}cafirexos_
  *┃➤* _${usedPrefix}gruposgb_
  *┃➤* _${usedPrefix}donar_
  *┃➤* _${usedPrefix}listagrupos_
  *┃➤* _${usedPrefix}estado_
- *┃➤* _${usedPrefix}infoBlodie_
+ *┃➤* _${usedPrefix}infoMagy_
  *┃➤* _${usedPrefix}instalarbot_
  *┃➤* _${usedPrefix}creador_
  *┃➤* _${usedPrefix}velocidad_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Free Fire  🇪🇬* 〕
+  ╭━〔 *💛 Magy Free Fire 💛* 〕
  *┃➤* _${usedPrefix}Lista3 / Lista De Actividades_
  *┃➤* _${usedPrefix}Masc18 / Lista Masc 18_
  *┃➤* _${usedPrefix}Masc20 / Lista Masc 20_
@@ -140,39 +140,39 @@ let menu =`
  *┃➤* _${usedPrefix}InfinitoFem / Reglas Infinito Femenina Sur_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Spamer  🇪🇬* 〕
+  ╭━〔 *💛 Magy Spamer 💛* 〕
  *┃➤* _${usedPrefix}SpamApk_
  *┃➤* _${usedPrefix}Comunidades_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Reclutamientos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Reclutamientos 💛* 〕
  *┃➤* _${usedPrefix}TeamFem_
  *┃➤* _${usedPrefix}TeamMasc_
   ╰━━━━━━━━━━━━━
 
-   ╭━〔 * 🇪🇬 Blodie Edits  🇪🇬* 〕
+   ╭━〔 *💛 Magy Edits 💛* 〕
  *┃➤* _${usedPrefix}ApkEdit_
  *┃➤* _${usedPrefix}DriveEdits_
  *┃➤* _${usedPrefix}Dzn / Servicio De Dzn - Comprar Edits_
   ╰━━━━━━━━━━━━━
 
-   ╭━〔 * 🇪🇬 Blodie Tarjetas  🇪🇬* 〕
+   ╭━〔 *💛 Magy Tarjetas 💛* 〕
  *┃➤* _${usedPrefix}Cc2_
  *┃➤* _${usedPrefix}Tarjetas_
   ╰━━━━━━━━━━━━━
 
-   ╭━〔 * 🇪🇬 Blodie Pornero  🇪🇬* 〕
- *┃➤* _${usedPrefix}BlodiePajero_
- *┃➤* _${usedPrefix}BlodiePornero_
+   ╭━〔 *💛 Magy Pornero 💛* 〕
+ *┃➤* _${usedPrefix}MagyPajero_
+ *┃➤* _${usedPrefix}MagyPornero_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Premium  🇪🇬* 〕
+  ╭━〔 *💛 Magy Premium 💛* 〕
  *┃➤* _${usedPrefix}listapremium | listprem_
  *┃➤* _${usedPrefix}pase premium_
  *┃➤* _${usedPrefix}pass premium_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Juegos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Juegos 💛* 〕
  *┃➤* _${usedPrefix}mates | matemáticas | math_
  *┃➤* _${usedPrefix}lanzar *cara* | *cruz*_
  *┃➤* _${usedPrefix}ppt *piedra : papel : tijera*_
@@ -218,12 +218,12 @@ let menu =`
  *┃➤* _${usedPrefix}suerte_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Ia  🇪🇬* 〕
+  ╭━〔 *💛 Magy Ia 💛* 〕
  *┃➤* _${usedPrefix}geminiimg *reaccione a una foto*_
  *┃➤* _${usedPrefix}gemini *texto*_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Ajustes Grupos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Ajustes Grupos 💛* 〕
  *┃➤* _${usedPrefix}enable *o* disable *bienvenida | welcome*_
  *┃➤* _${usedPrefix}enable *o* disable *avisos | detect*_
  *┃➤* _${usedPrefix}enable *o* disable *autonivel | autolevelup*_
@@ -252,13 +252,13 @@ let menu =`
  *┃➤* _${usedPrefix}enable *o* disable *soloprivados | pconly*_
  *┃➤* _${usedPrefix}enable *o* disable *sologrupos | gconly*_  ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Ajustes  🇪🇬* 〕
+  ╭━〔 *💛 Magy Ajustes 💛* 〕
  *┃➤* _${usedPrefix}configuracion_
  *┃➤* _${usedPrefix}settings_
  *┃➤* _${usedPrefix}vergrupo_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Descargas  🇪🇬* 〕
+  ╭━〔 *💛 Magy Descargas 💛* 〕
  *┃➤* _${usedPrefix}imagen | image *texto*_
  *┃➤* _${usedPrefix}pinterest | dlpinterest *texto*_
  *┃➤* _${usedPrefix}wallpaper|wp *texto*_
@@ -288,7 +288,7 @@ let menu =`
  *┃➤* _${usedPrefix}historia_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Anonimo  🇪🇬* 〕
+  ╭━〔 *💛 Magy Anonimo 💛* 〕
  *┃➤* _${usedPrefix}chatanonimo | anonimochat_
  *┃➤* _${usedPrefix}anonimoch_
  *┃➤* _${usedPrefix}start_
@@ -296,7 +296,7 @@ let menu =`
  *┃➤* _${usedPrefix}leave_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Cmd Grupos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Cmd Grupos 💛* 〕
  *┃➤* _${usedPrefix}add *numero*_
  *┃➤* _${usedPrefix}sacar | ban | kick  *@tag*_
  *┃➤* _${usedPrefix}grupo *abrir o cerrar*_
@@ -331,7 +331,7 @@ let menu =`
  *┃➤* _${usedPrefix}disable_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Parejas  🇪🇬* 〕
+  ╭━〔 *💛 Magy Parejas 💛* 〕
  *┃➤* _${usedPrefix}listaparejas | listship_
  *┃➤* _${usedPrefix}mipareja | mylove_
  *┃➤* _${usedPrefix}pareja | couple *@tag*_
@@ -340,7 +340,7 @@ let menu =`
  *┃➤* _${usedPrefix}terminar | finish *@tag*_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Votaciones  🇪🇬* 〕
+  ╭━〔 *💛 Magy Votaciones 💛* 〕
  *┃➤* _${usedPrefix}crearvoto | startvoto *texto*_
  *┃➤* _${usedPrefix}sivotar | upvote_
  *┃➤* _${usedPrefix}novotar | devote_
@@ -348,7 +348,7 @@ let menu =`
  *┃➤* _${usedPrefix}delvoto | deletevoto_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Convertidores  🇪🇬* 〕
+  ╭━〔 *💛 Magy Convertidores 💛* 〕
  *┃➤* _${usedPrefix}toimg | img | jpg *sticker*_
  *┃➤* _${usedPrefix}toanime | jadianime *foto*_
  *┃➤* _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
@@ -359,12 +359,12 @@ let menu =`
  *┃➤* _${usedPrefix}tts es *texto*_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Logos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Logos 💛* 〕
  *┃➤* _${usedPrefix}logos *efecto texto*_
  *┃➤* _${usedPrefix}menulogos2_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Efectos  🇪🇬* 〕
+  ╭━〔 *💛 Magy Efectos 💛* 〕
  *┃➤* _${usedPrefix}simpcard *@tag*_
  *┃➤* _${usedPrefix}hornycard *@tag*_
  *┃➤* _${usedPrefix}lolice *@tag*_
@@ -374,7 +374,7 @@ let menu =`
  *┃➤* _${usedPrefix}blur_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Fantasy  🇪🇬* 〕
+  ╭━〔 *💛 Magy Fantasy 💛* 〕
  *┃➤* _${usedPrefix}fantasy | fy_
  *┃➤* _${usedPrefix}fyguia | fyguide_
  *┃➤* _${usedPrefix}fantasyinfo | fyinfo_
@@ -385,7 +385,7 @@ let menu =`
  *┃➤* _${usedPrefix}fyentregar | fytransfer_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Anime  🇪🇬* 〕
+  ╭━〔 *💛 Magy Anime 💛* 〕
  *┃➤* _${usedPrefix}chica_
  *┃➤* _${usedPrefix}chico_
  *┃➤* _${usedPrefix}cristianoronaldo_
@@ -438,7 +438,7 @@ let menu =`
  *┃➤* _${usedPrefix}cosplay_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Efectos A.  🇪🇬* 〕
+  ╭━〔 *💛 Magy Efectos A. 💛* 〕
  *┃➤* _${usedPrefix}bass_
  *┃➤* _${usedPrefix}blown_
  *┃➤* _${usedPrefix}deep_
@@ -453,7 +453,7 @@ let menu =`
  *┃➤* _${usedPrefix}tupai_
   ╰━━━━━━━━━━━━━
   	
-  ╭━〔 * 🇪🇬 Blodie Busqueda  🇪🇬* 〕
+  ╭━〔 *💛 Magy Busqueda 💛* 〕
  *┃➤* _${usedPrefix}animeinfo *texto*_
  *┃➤* _${usedPrefix}anuel_
  *┃➤* _${usedPrefix}conejo_
@@ -468,7 +468,7 @@ let menu =`
  *┃➤* _${usedPrefix}wiki | wikipedia *texto*_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Herramientas  🇪🇬* 〕
+  ╭━〔 *💛 Magy Herramientas 💛* 〕
  *┃➤* _${usedPrefix}afk *motivo*_
  *┃➤* _${usedPrefix}acortar *url*_
  *┃➤* _${usedPrefix}calc *operacion math*_
@@ -484,7 +484,7 @@ let menu =`
  *┃➤* _${usedPrefix}horario_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Rpg  🇪🇬* 〕
+  ╭━〔 *💛 Magy Rpg 💛* 〕
  *┃➤* _${usedPrefix}pase premium_
  *┃➤* _${usedPrefix}pass premium_
  *┃➤* _${usedPrefix}listapremium | listprem_
@@ -510,7 +510,7 @@ let menu =`
  *┃➤* _${usedPrefix}myns_
  *┃➤* _${usedPrefix}unreg *numero de serie*_
  *┃➤* _${usedPrefix}minardiamantes | minargemas_
- *┃➤* _${usedPrefix}minarBlodiecoins | minarcoins_
+ *┃➤* _${usedPrefix}minarMagycoins | minarcoins_
  *┃➤* _${usedPrefix}minarexperiencia | minarexp_
  *┃➤* _${usedPrefix}minar *:* minar2 *:* minar3_
  *┃➤* _${usedPrefix}rob | robar 
@@ -526,11 +526,11 @@ let menu =`
  *┃➤* _${usedPrefix}fylista_
   ╰━━━━━━━━━━━━━
 
-  ╭━〔 * 🇪🇬 Blodie Tops  🇪🇬* 〕
+  ╭━〔 *💛 Magy Tops 💛* 〕
  *┃➤* _${usedPrefix}top_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Stickers  🇪🇬* 〕
+  ╭━〔 *💛 Magy Stickers 💛* 〕
  *┃➤* _${usedPrefix}sticker | s *imagen o video*_
  *┃➤* _${usedPrefix}sticker | s *url de tipo jpg*_
  *┃➤* _${usedPrefix}emojimix *😺+😆*_
@@ -550,12 +550,12 @@ let menu =`
  *┃➤* _${usedPrefix}cs *:* cs2_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Stickers 2  🇪🇬* 〕
+  ╭━〔 *💛 Magy Stickers 2 💛* 〕
  *┃➤* _${usedPrefix}wm *packname|author*_
  *┃➤* _${usedPrefix}wm *texto1|texto2*_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Stickers 3 🇪🇬* 〕
+  ╭━〔 *💛 Magy Stickers 3💛* 〕
  *┃➤* _${usedPrefix}palmaditas | pat *@tag*_
  *┃➤* _${usedPrefix}bofetada | slap *@tag*_
  *┃➤* _${usedPrefix}golpear *@tag*_
@@ -563,12 +563,12 @@ let menu =`
  *┃➤* _${usedPrefix}alimentar | food *@tag*_
   ╰━━━━━━━━━━━━━
   
-  ╭━〔 * 🇪🇬 Blodie Owners  🇪🇬* 〕
+  ╭━〔 *💛 Magy Owners 💛* 〕
  *┃➤* _${usedPrefix}join *enlace*_
  *┃➤* _${usedPrefix}unete *enlace*_
  *┃➤* _${usedPrefix}dardiamantes *cantidad*_
  *┃➤* _${usedPrefix}darxp *cantidad*_
- *┃➤* _${usedPrefix}darBlodiecoins *cantidad*_
+ *┃➤* _${usedPrefix}darMagycoins *cantidad*_
  *┃➤* _${usedPrefix}addprem | userpremium *@tag* *cantidad*_
  *┃➤* _${usedPrefix}addprem2 | userpremium2 *@tag* *cantidad*_
  *┃➤* _${usedPrefix}addprem3 | userpremium3 *@tag* *cantidad*_
@@ -582,7 +582,7 @@ let menu =`
  *┃➤* _${usedPrefix}comunicargrupos *texto*_
  *┃➤* _${usedPrefix}borrartmp | cleartmp_
  *┃➤* _${usedPrefix}delexp *@tag*_
- *┃➤* _${usedPrefix}delBlodiecoins *@tag*_
+ *┃➤* _${usedPrefix}delMagycoins *@tag*_
  *┃➤* _${usedPrefix}deldiamantes *@tag*_
  *┃➤* _${usedPrefix}reiniciar | restart_
  *┃➤* _${usedPrefix}actualizar | update_
@@ -591,10 +591,10 @@ let menu =`
  *┃➤* _${usedPrefix}listapremium | listprem_
  *┃➤* _${usedPrefix}añadirdiamantes *@tag cantidad*_
  *┃➤* _${usedPrefix}añadirxp *@tag cantidad*_
- *┃➤* _${usedPrefix}añadirBlodiecoins *@tag cantidad*_
+ *┃➤* _${usedPrefix}añadirMagycoins *@tag cantidad*_
   ╰━━━━━━━━━━━━━
 `.trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬', previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu.getRandom()}}})
+await conn.sendFile(m.chat, gataImg.getRandom(), 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu.getRandom()}}})
 //conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
 	
 } catch (e) {
