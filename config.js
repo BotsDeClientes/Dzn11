@@ -13,9 +13,9 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', true], //𝗣𝗶𝗻𝗴𝘂𝗶 𝗕𝗼𝘁 🐧
-["56949598720", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', true],
-["573112811966"]]
+["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', true], //𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛
+["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true],
+["543815501815"]]
 
 global.mods = []
 global.prems = []
@@ -112,7 +112,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["51981983121", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', 1]]
+["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -121,7 +121,7 @@ global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 global.packname = "𝗧𝗼𝗺𝗮 𝗧𝘂 𝗦𝘁𝗶𝗰𝗸𝗲𝗿"
-global.author = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 🐧"
+global.author = "𝗠𝗮𝗴𝘆 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 💛"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > CUENTAS E INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -129,35 +129,35 @@ global.author = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 🐧"
 // [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1"
 global.vsJB = "1"
-global.gt = "🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧"
+global.gt = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
 
-global.yt = "https://www.instagram.com/comunidad.pingui.pe"
-global.yt2 = "https://www.instagram.com/comunidad.pingui.pe"
-global.ig = "https://www.instagram.com/comunidad.pingui.pe"
-global.md = "https://www.instagram.com/comunidad.pingui.pe"
-global.fb = "https://www.instagram.com/comunidad.pingui.pe"
-global.tk = "https://www.instagram.com/comunidad.pingui.pe"
-global.ths = "https://www.instagram.com/comunidad.pingui.pe"
+global.yt = "https://www.instagram.com/comu.blessed"
+global.yt2 = "https://www.instagram.com/comu.blessed"
+global.ig = "https://www.instagram.com/comu.blessed"
+global.md = "https://www.instagram.com/comu.blessed"
+global.fb = "https://www.instagram.com/comu.blessed"
+global.tk = "https://www.instagram.com/comu.blessed"
+global.ths = "https://www.instagram.com/comu.blessed"
 global.paypal = 'https://www.paypal.com/myaccount/summary'
 global.asistencia = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //Contacto
 global.bot = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧 𝙊𝙛𝙞𝙘𝙞𝙖𝙡 
 
-global.nna = 'https://www.instagram.com/comunidad.pingui.pe' // Cuentas
-global.nn2 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo tg GataBot
-global.nna2 = 'https://www.instagram.com/comunidad.pingui.pe' // Help
-global.nn = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 1
-global.nnn = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 2
-global.nnnt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 3
-global.nnntt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 4
-global.nnnttt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 5
-global.nnnttt1 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 6 COL
-global.nnnttt2 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 7 COL
-global.nnnttt3 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 8 COL
-global.nnnttt4 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 9 COL
-global.nnnttt5 = 'https://www.instagram.com/comunidad.pingui.pe' // MULTI - BOTS
-global.nnnttt6 = 'https://www.instagram.com/comunidad.pingui.pe' // A.T.M.M
-global.channel1 = 'https://www.instagram.com/comunidad.pingui.pe'
-global.channel2 = 'https://www.instagram.com/comunidad.pingui.pe'
+global.nna = 'https://www.instagram.com/comu.blessed' // Cuentas
+global.nn2 = 'https://www.instagram.com/comu.blessed' // Grupo tg GataBot
+global.nna2 = 'https://www.instagram.com/comu.blessed' // Help
+global.nn = 'https://www.instagram.com/comu.blessed' // Grupo 1
+global.nnn = 'https://www.instagram.com/comu.blessed' // Grupo 2
+global.nnnt = 'https://www.instagram.com/comu.blessed' // Grupo 3
+global.nnntt = 'https://www.instagram.com/comu.blessed' // Grupo 4
+global.nnnttt = 'https://www.instagram.com/comu.blessed' // Grupo 5
+global.nnnttt1 = 'https://www.instagram.com/comu.blessed' // Grupo 6 COL
+global.nnnttt2 = 'https://www.instagram.com/comu.blessed' // Grupo 7 COL
+global.nnnttt3 = 'https://www.instagram.com/comu.blessed' // Grupo 8 COL
+global.nnnttt4 = 'https://www.instagram.com/comu.blessed' // Grupo 9 COL
+global.nnnttt5 = 'https://www.instagram.com/comu.blessed' // MULTI - BOTS
+global.nnnttt6 = 'https://www.instagram.com/comu.blessed' // A.T.M.M
+global.channel1 = 'https://www.instagram.com/comu.blessed'
+global.channel2 = 'https://www.instagram.com/comu.blessed'
 global.channel3 = 'https://chat.whatsapp.com/Ghf2fHMzBLA1iuYAXstOb4'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
