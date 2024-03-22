@@ -1003,12 +1003,12 @@ sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
-delete: true,
+delete: false,
 modohorny: true,
 stickers: false,
 autosticker: false,
-audios: false,
-antiver: true,
+audios: true,
+antiver: false,
 antiLink: false,
 antiLink2: false,
 antiTiktok: false,
@@ -1019,7 +1019,7 @@ antiInstagram: false,
 antiTwitter: false,
 antifake: false,
 reaction: true,
-viewonce: true,
+viewonce: false,
 modoadmin: false,
 antitoxic: false,
 game: true, 
@@ -1041,7 +1041,7 @@ if (!('antiPrivate' in settings)) settings.antiPrivate = false
 if (!('antiCall' in settings)) settings.antiCall = true
 if (!('antiSpam' in settings)) settings.antiSpam = true 
 if (!('modoia' in settings)) settings.modoia = false
-if (!('jadibotmd' in settings)) settings.jadibotmd = false  
+if (!('jadibotmd' in settings)) settings.jadibotmd = true  
 } else global.db.data.settings[this.user.jid] = {
 self: false,
 autoread: false,
@@ -1193,7 +1193,7 @@ return
 }
 
 //Antispam		
-if (user.antispam2 && isROwner) return
+if (user.antispam2) return
 let time = global.db.data.users[m.sender].spam + 5000
 if (new Date - global.db.data.users[m.sender].spam < 5000) throw console.log(`[ SPAM ]`) 
 global.db.data.users[m.sender].spam = new Date * 1
@@ -1248,19 +1248,19 @@ if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-//this.reply(m.chat, `𝙉𝙤 𝙏𝙞𝙚𝙣𝙚𝙨 𝙋𝙞𝙣𝙜𝙪𝙞 𝘾𝙤𝙞𝙣𝙨 🐧`, m)
-this.sendMessage(m.chat, {text: `𝙉𝙤 𝙏𝙞𝙚𝙣𝙚𝙨 𝙋𝙞𝙣𝙜𝙪𝙞 𝘾𝙤𝙞𝙣𝙨 🐧`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
+//this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
+this.sendMessage(m.chat, {text: `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘾𝙊𝙄𝙉𝙎`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 continue     
 }
 			
 m.exp += xp
 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
 }
@@ -1319,7 +1319,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + '𝙋𝙞𝙣𝙜𝙪𝙞 𝘾𝙤𝙞𝙣𝙨 𝙐𝙨𝙖𝙙𝙤𝙨 🐧')  
+m.reply(+m.money + ' 𝘾𝙊𝙄𝙉𝙎 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1409,7 +1409,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '🐧 𝗣𝗶𝗻𝗴𝘂𝗶 𝗕𝗼𝘁 🐧') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 			    
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -1430,7 +1430,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '💛 https://www.instagram.com/comu.bleseed'].getRandom(),
+"title": [wm, '' + gt + '', ''].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: [md, channel1, channel2, channel3, yt, ig, paypal, fb].getRandom()}}}, { quoted: fkontak2 })
@@ -1493,8 +1493,11 @@ let msg = this.serializeM(this.loadMessage(id))
 let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
-if (!msg?.isOwner) return 
-const antideleteMessage = ``.trim();
+if (!msg?.isGroup) return 
+const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
+${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
+${lenguajeGB['smsCont21']()}
+*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
 await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
@@ -1513,10 +1516,10 @@ admin: lenguajeGB['smsAdmin'](),
 botAdmin: lenguajeGB['smsBotAdmin'](),
 unreg: lenguajeGB['smsUnreg'](),
 restrict: lenguajeGB['smsRestrict'](),
-}[type] 
+}[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '💛', 'https://www.instagram.com/comu.bleseed'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, channel1, channel2, nna, yt, ig, paypal, fb].getRandom() }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '' + gt + '', ''].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, channel1, channel2, channel3, yt, ig, paypal, fb].getRandom() }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 

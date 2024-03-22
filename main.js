@@ -104,7 +104,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `PinguiSession`
+global.authFile = `GataBotSession`
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -115,18 +115,14 @@ const methodCodeQR = process.argv.includes("qr")
 const methodCode = !!phoneNumber || process.argv.includes("code")
 const MethodMobile = process.argv.includes("mobile")
 
-const rl = readline.createInterface({
-input: process.stdin,
-output: process.stdout,
-terminal: true,
-})
+//const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+//const question = (texto) => new Promise((resolver) => rl.question(texto, resolver))
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout, prompt: '' })
 const question = (texto) => {
-rl.clearLine(rl.input, 0)
 return new Promise((resolver) => {
 rl.question(texto, (respuesta) => {
-rl.clearLine(rl.input, 0)
 resolver(respuesta.trim())
-})})
+}) })
 }
 
 let opcion
@@ -158,12 +154,14 @@ opcion = await question(`╭${lineM}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta(`(${mid.methodCode14})`)}`)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ╰${lineM}\n${chalk.bold.magentaBright('---> ')}`)
+//if (fs.existsSync(`./${authFile}/creds.json`)) {
+//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
+//process.exit()
 if (!/^[1-2]$/.test(opcion)) {
 console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
   
-console.info = () => {} 
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
@@ -175,39 +173,54 @@ keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ l
 },
 markOnlineOnConnect: true, 
 generateHighQualityLinkPreview: true, 
-version,
-syncFullHistory: true,
 getMessage: async (clave) => {
 let jid = jidNormalizedUser(clave.remoteJid)
 let msg = await store.loadMessage(jid, clave.id)
 return msg?.message || ""
 },
-msgRetryCounterCache, //Resolver mensajes en espera
-defaultQueryTimeoutMs: undefined,
+msgRetryCounterCache,
+msgRetryCounterMap,
+defaultQueryTimeoutMs: undefined,   
+version
 }
 
 global.conn = makeWASocket(connectionOptions)
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
 if (opcion === '2' || methodCode) {
+//if (fs.existsSync(`./${authFile}/creds.json`)) {
+//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
+//process.exit()
+//}
 opcion = '2'
-if (!conn.authState.creds.registered) {
+if (!conn.authState.creds.registered) {  
+//if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento con la API móvil')
+
 let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
+if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
+console.log(chalk.bgBlack(chalk.bold.redBright(mid.phNumber)))
+process.exit(0)
+}} else {
+while (true) {
+addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(mid.phNumber2(chalk))))
+addNumber = addNumber.replace(/[^0-9]/g, '')
+
+if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
+break 
 } else {
-do {
-phoneNumber = await question(chalk.bgBlack(chalk.bold.greenBright(mid.phNumber2(chalk))))
-phoneNumber = phoneNumber.replace(/\D/g,'')
-} while (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v)))
-rl.close()
-addNumber = phoneNumber.replace(/\D/g, '')
+console.log(chalk.bold.redBright(mid.phNumber3))
+}}
+rl.close()  
+} 
+
 
 setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
 console.log(chalk.bold.white(chalk.bgMagenta(mid.pairingCode)), chalk.bold.white(chalk.white(codeBot)))
 }, 2000)
-}}}
+}}
 }
 
 conn.isInit = false
@@ -216,8 +229,10 @@ conn.well = false
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "PinguiDios"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "PinguiSession"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
+
 if (global.obtenerQrWeb === 1) (await import('./server.js')).default(global.conn, PORT)
+
 
 async function connectionUpdate(update) {  
 const {connection, lastDisconnect, isNewLogin} = update
@@ -238,7 +253,7 @@ if (connection == 'open') {
 console.log(chalk.bold.greenBright(mid.mConexion))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
-await fs.unlinkSync("./PinguiSession/" + "creds.json")
+await fs.unlinkSync("./GataBotSession/" + "creds.json")
 console.log(chalk.bold.redBright(mid.mConexionOFF)) 
 process.send('reset')}
 if (connection === 'close') {
@@ -269,6 +284,7 @@ process.on('uncaughtException', console.error);
 //process.on('uncaughtException', (err) => {
 //console.error('Se ha cerrado la conexión:\n', err)
 //process.send('reset') })
+
 
 let isInit = true;
 let handler = await import('./handler.js');
@@ -404,29 +420,29 @@ unlinkSync(filePath)})
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./PinguiSession")
+let directorio = readdirSync("./PinguiBot")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./PinguiSession/${files}`)
+unlinkSync(`./PinguiBot/${files}`)
 })
 } 
 
 function purgeSessionSB() {
 try {
-const listaDirectorios = readdirSync('./PinguiDios/');
+const listaDirectorios = readdirSync('./PinguiSession/');
 let SBprekey = [];
 listaDirectorios.forEach(directorio => {
-if (statSync(`./PinguiDios/${directorio}`).isDirectory()) {
-const DSBPreKeys = readdirSync(`./PinguiDios/${directorio}`).filter(fileInDir => {
+if (statSync(`./PinguiSession/${directorio}`).isDirectory()) {
+const DSBPreKeys = readdirSync(`./PinguiSession/${directorio}`).filter(fileInDir => {
 return fileInDir.startsWith('pre-key-')
 })
 SBprekey = [...SBprekey, ...DSBPreKeys];
 DSBPreKeys.forEach(fileInDir => {
 if (fileInDir !== 'creds.json') {
-unlinkSync(`./PinguiDios/${directorio}/${fileInDir}`)
+unlinkSync(`./PinguiSession/${directorio}/${fileInDir}`)
 }})
 }})
 if (SBprekey.length === 0) {
@@ -438,7 +454,7 @@ console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./PinguiSession/', './PinguiDios/']
+const directories = ['./PinguiBot/', './PinguiSession/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -458,14 +474,14 @@ if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
 console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
-//setInterval(async () => {
-//if (stopped === 'close' || !conn || !conn.user) return
-//await purgeSession()
-//console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
+setInterval(async () => {
+if (stopped === 'close' || !conn || !conn.user) return
+await purgeSession()
+console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
 
-//setInterval(async () => {
-//if (stopped === 'close' || !conn || !conn.user) return
-//await purgeSessionSB()}, 1000 * 60 * 10) 
+setInterval(async () => {
+if (stopped === 'close' || !conn || !conn.user) return
+await purgeSessionSB()}, 1000 * 60 * 10)
 
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return

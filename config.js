@@ -13,9 +13,9 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛
-["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true],
-["543815501815", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true]]
+["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', true], //𝗣𝗶𝗻𝗴𝘂𝗶 𝗕𝗼𝘁 🐧
+["56949598720", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', true],
+["573112811966"]]
 
 global.mods = []
 global.prems = []
@@ -47,7 +47,7 @@ global.confirmCode = "" // No tocar esto : Do not touch this line
 // English 👉 en
 global.lenguajeGB = es
 global.mid = esDefault
-global.version_language = '1'
+global.version_language = '1.0'
 
 // [ES] > Si "default_language" esta vacío, su idioma predeterminado será Español o se usará el idioma que cada usuario haya seleccionado al momento de registrarse. 
 // [EN] > If "default_language" is empty, your default language will be Spanish or the language that each user has selected at the time of registration will be used.
@@ -112,8 +112,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', 1], 
-["51926933818", '𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1]]
+["51981983121", '𝗣𝗶𝗻𝗴𝘂𝗶 🐧', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -121,8 +120,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
-global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
+global.packname = "𝗧𝗼𝗺𝗮 𝗧𝘂 𝗦𝘁𝗶𝗰𝗸𝗲𝗿"
+global.author = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 🐧"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > CUENTAS E INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -130,35 +129,35 @@ global.author = "𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
 // [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1"
 global.vsJB = "1"
-global.gt = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
+global.gt = "🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧"
 
-global.yt = "https://www.instagram.com/comu.blessed"
-global.yt2 = "https://www.instagram.com/comu.blessed"
-global.ig = "https://www.instagram.com/comu.blessed"
-global.md = "https://www.instagram.com/comu.blessed"
-global.fb = "https://www.instagram.com/comu.blessed"
-global.tk = "https://www.instagram.com/comu.blessed"
-global.ths = "https://www.instagram.com/comu.blessed"
-global.paypal = 'https://www.paypal.com/comu.blessed'
+global.yt = "https://www.instagram.com/comunidad.pingui.pe"
+global.yt2 = "https://www.instagram.com/comunidad.pingui.pe"
+global.ig = "https://www.instagram.com/comunidad.pingui.pe"
+global.md = "https://www.instagram.com/comunidad.pingui.pe"
+global.fb = "https://www.instagram.com/comunidad.pingui.pe"
+global.tk = "https://www.instagram.com/comunidad.pingui.pe"
+global.ths = "https://www.instagram.com/comunidad.pingui.pe"
+global.paypal = 'https://www.paypal.com/myaccount/summary'
 global.asistencia = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //Contacto
 global.bot = 'https://wa.me/51926933818?text=Hola%20Pingui%20Deseo%20Comprar%20El%20Bot%20:3' //🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧 𝙊𝙛𝙞𝙘𝙞𝙖𝙡 
 
-global.nna = 'https://www.instagram.com/comu.blessed' // Cuentas
-global.nn2 = 'https://www.instagram.com/comu.blessed' // Grupo tg GataBot
-global.nna2 = 'https://www.instagram.com/comu.blessed' // Help
-global.nn = 'https://www.instagram.com/comu.blessed' // Grupo 1
-global.nnn = 'https://www.instagram.com/comu.blessed' // Grupo 2
-global.nnnt = 'https://www.instagram.com/comu.blessed' // Grupo 3
-global.nnntt = 'https://www.instagram.com/comu.blessed' // Grupo 4
-global.nnnttt = 'https://www.instagram.com/comu.blessed' // Grupo 5
-global.nnnttt1 = 'https://www.instagram.com/comu.blessed' // Grupo 6 COL
-global.nnnttt2 = 'https://www.instagram.com/comu.blessed' // Grupo 7 COL
-global.nnnttt3 = 'https://www.instagram.com/comu.blessed' // Grupo 8 COL
-global.nnnttt4 = 'https://www.instagram.com/comu.blessed' // Grupo 9 COL
-global.nnnttt5 = 'https://www.instagram.com/comu.blessed' // MULTI - BOTS
-global.nnnttt6 = 'https://www.instagram.com/comu.blessed' // A.T.M.M
-global.channel1 = 'https://www.instagram.com/comu.blessed'
-global.channel2 = 'https://www.instagram.com/comu.blessed'
+global.nna = 'https://www.instagram.com/comunidad.pingui.pe' // Cuentas
+global.nn2 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo tg GataBot
+global.nna2 = 'https://www.instagram.com/comunidad.pingui.pe' // Help
+global.nn = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 1
+global.nnn = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 2
+global.nnnt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 3
+global.nnntt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 4
+global.nnnttt = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 5
+global.nnnttt1 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 6 COL
+global.nnnttt2 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 7 COL
+global.nnnttt3 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 8 COL
+global.nnnttt4 = 'https://www.instagram.com/comunidad.pingui.pe' // Grupo 9 COL
+global.nnnttt5 = 'https://www.instagram.com/comunidad.pingui.pe' // MULTI - BOTS
+global.nnnttt6 = 'https://www.instagram.com/comunidad.pingui.pe' // A.T.M.M
+global.channel1 = 'https://www.instagram.com/comunidad.pingui.pe'
+global.channel2 = 'https://www.instagram.com/comunidad.pingui.pe'
 global.channel3 = 'https://chat.whatsapp.com/Ghf2fHMzBLA1iuYAXstOb4'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -184,8 +183,8 @@ global.eg = ''
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
-global.igfg = "comu.blessed"
+global.wm = "🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧"
+global.igfg = "🐧 𝗣𝗶𝗻𝗴𝘂𝗶𝗕𝗼𝘁-𝗠𝗗 🐧"
 global.wait = "*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*"
 global.waitt = "*⌛ _Cargando | Charging..._ ▬▬▭▭▭*"
 global.waittt = "*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*"
@@ -244,7 +243,7 @@ global.welgata = [tk, ig, yt2, yt2, ig, md, ig, yt, paypal, yt2, yt2, ig, fb, tk
 global.redesMenu = [nna, nn, nn2, nnn, nnnt, nnntt, nnnttt, nnnttt1, nnnttt2, nnnttt3, nnnttt4, nnnttt5, md, ig, paypal, yt, asistencia, fb, tk]
 global.accountsgb = [channel1, channel2, channel3, tk, ig, yt, paypal, fb, ths, md, nna, asistencia]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18]
-global.gataVidMenu = ['https://qu.ax/AAvg.mp4', 'https://qu.ax/SeFS.mp4', 'https://qu.ax/NqZN.mp4']
+global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 global.gataImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 

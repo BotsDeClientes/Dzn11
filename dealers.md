@@ -4,6 +4,6 @@
  
 | USUARIO          |   CÓDIGO                | CONTACTO    | ESTADO
 | ------------     | ------------            | ------------| ------------
-| [**Cristhofer3**](https://www.instagram.com/cristoferrojasph)        | `KmZxVE5lIUVvrkqLd8EYJlC9G` | `IG: @cristoferrojasph` | ✅
+| [**Richetti123**](https://github.com/Richetti123)        | `KmZxVE5lIUVvrkqLd8EYJlC9G` | `IG: @richetti_123` | ✅
 | ⚪        | ⚪               |  ⚪ | ⚪
 
