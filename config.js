@@ -13,7 +13,7 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗕𝗹𝗼𝗱𝗶𝗲 𝗕𝗼𝘁 🇪🇬
+["51926933818", '𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 🐧', true], //𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛
 ["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true],
 ["543815501815", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', true]]
 
@@ -113,7 +113,7 @@ global.moment = moment
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
 ["563813887819", '𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛', 1], 
-["51978420752", '𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1]]
+["51926933818", '𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -134,6 +134,7 @@ global.gt = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
 
 global.yt = "https://www.instagram.com/comu.blessed"
 global.yt2 = "https://www.instagram.com/comu.blessed"
+global.ig = "https://www.instagram.com/comu.blessed"
 global.md = "https://www.instagram.com/comu.blessed"
 global.fb = "https://www.instagram.com/comu.blessed"
 global.tk = "https://www.instagram.com/comu.blessed"
@@ -183,8 +184,8 @@ global.eg = ''
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
-global.igfg = "𝗕𝗼𝘁 𝗗𝗲 𝗠𝗮𝗴𝘆 💛"
+global.wm = "𝗣𝗶𝗻𝗴𝘂𝗶 𝗗𝗶𝗼𝘀 𝗦𝗲𝘅 🐧"
+global.igfg = "comu.blessed"
 global.wait = "*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*"
 global.waitt = "*⌛ _Cargando | Charging..._ ▬▬▭▭▭*"
 global.waittt = "*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*"
