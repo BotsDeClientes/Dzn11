@@ -39,7 +39,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Xxpor12/JNJNJDS.git && cd JNJNJDS
+git clone https://github.com/BotsDeClientes/Dzn11.git && cd Dzn11
 ```
 
 ```bash
